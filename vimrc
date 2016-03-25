@@ -10,27 +10,35 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-"NeoBundle 'Shougo/vimproc'
+" Basic
 NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'editorconfig/editorconfig-vim'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'ThomasAdam/tmux'
 NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundle 'w0ng/vim-hybrid'
-NeoBundle 'gosukiwi/vim-atom-dark'
-NeoBundle 'othree/html5.vim'
-NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'scrooloose/syntastic'
+" Editor Config
+NeoBundle 'editorconfig/editorconfig-vim'
+" HTML
+NeoBundle 'othree/html5.vim'
+NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'mattn/emmet-vim'
+" CSS
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'wavded/vim-stylus'
 NeoBundle 'cakebaker/scss-syntax.vim'
-NeoBundle 'digitaltoad/vim-jade'
-NeoBundle 'mattn/emmet-vim'
+NeoBundle 'gorodinskiy/vim-coloresque'
+" JavaScript
+NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'heavenshell/vim-jsdoc'
-NeoBundle 'kannokanno/previm'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'mxw/vim-jsx'
+" Golang
 NeoBundle 'fatih/vim-go'
+" Plugins
 NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'kannokanno/previm'
+NeoBundle 'cocopon/svss.vim'
+" Colors
+NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'gosukiwi/vim-atom-dark'
 
 call neobundle#end()
 
@@ -57,13 +65,6 @@ autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 "=================================
-" NERDTree Settings
-"=================================
-
-let NERDTreeShowHidden = 1
-" nnoremap <silent><C-l> :NERDTreeToggle<CR>
-
-"=================================
 " Vim Indent Guides Settings
 "=================================
 
@@ -80,6 +81,12 @@ let g:indent_guides_guide_size = 1
 "=================================
 
 let g:syntastic_javascript_checkers = ['eslint']
+
+"=================================
+" jsx Settings
+"=================================
+
+let g:jsx_ext_required = 0
 
 "=================================
 " JsDoc Settings
