@@ -117,6 +117,7 @@ nnoremap <silent><C-r><C-n> :QuickRun<CR>
 
 syntax on
 set t_Co=256
+set display=lastline
 colorscheme atom-dark-256
 set autoindent
 set autoread
@@ -127,6 +128,7 @@ set hlsearch
 set ignorecase
 set list
 set listchars=tab:>-,trail:-
+set matchtime=1
 set nobackup
 set nonu
 set noswapfile
