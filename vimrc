@@ -26,6 +26,7 @@ NeoBundle 'wavded/vim-stylus'
 NeoBundle 'cakebaker/scss-syntax.vim'
 NeoBundle 'gorodinskiy/vim-coloresque'
 " JavaScript
+NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'heavenshell/vim-jsdoc'
 NeoBundle 'kchmck/vim-coffee-script'
