@@ -27,6 +27,8 @@ NeoBundle 'cakebaker/scss-syntax.vim'
 NeoBundle 'gorodinskiy/vim-coloresque'
 " JavaScript
 NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'othree/yajs.vim'
+NeoBundle 'othree/es.next.syntax.vim'
 NeoBundle 'jelera/vim-javascript-syntax'
 NeoBundle 'heavenshell/vim-jsdoc'
 NeoBundle 'kchmck/vim-coffee-script'
