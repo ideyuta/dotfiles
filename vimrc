@@ -39,6 +39,8 @@ NeoBundle 'fatih/vim-go'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'cocopon/svss.vim'
+" Git
+NeoBundle 'airblade/vim-gitgutter'
 " Colors
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'gosukiwi/vim-atom-dark'
