@@ -44,3 +44,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 ### Git-Radar
 # export PROMPT="$PROMPT$(git-radar --zsh --fetch)"
+
+export EDITOR=vim
+eval "$(direnv hook zsh)"
