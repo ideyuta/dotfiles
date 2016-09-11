@@ -166,5 +166,5 @@ set wrap
 nmap <silent> <Esc><Esc> :nohlsearch<CR>
 
 " 現在日時を入力
-nmap <C-o><C-o> <ESC>i<C-r>=strftime("%Y-%m-%d %H:%M:%S")<CR>
-nmap <C-o><C-j> <ESC>i<C-r>=strftime("%Y-%m-%d %H:%M:%S (%a)")<CR>
+nmap <C-t><C-t> <ESC>i<C-r>=strftime("%Y-%m-%d %H:%M:%S")<CR>
+nmap <C-t><C-j> <ESC>i<C-r>=strftime("%Y-%m-%d %H:%M:%S (%a)")<CR>
