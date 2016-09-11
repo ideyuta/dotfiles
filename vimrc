@@ -39,6 +39,8 @@ NeoBundle 'fatih/vim-go'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'cocopon/svss.vim'
+NeoBundle 'xolox/vim-misc'
+NeoBundle 'xolox/vim-notes'
 " Git
 " NeoBundle 'airblade/vim-gitgutter'
 " Colors
@@ -121,6 +123,12 @@ autocmd Filetype go setlocal tabstop=4 softtabstop=4 shiftwidth=4
 "=================================
 
 nnoremap <silent><C-r><C-n> :QuickRun<CR>
+
+"=================================
+" Vim-Note Settings
+"=================================
+"
+:let g:notes_directories = ['~/Dropbox/notes']
 
 "=================================
 " Vim Settings
