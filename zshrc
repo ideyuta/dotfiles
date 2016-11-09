@@ -47,3 +47,8 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 export EDITOR=vim
 eval "$(direnv hook zsh)"
+
+#Android
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
