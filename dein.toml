@@ -1,0 +1,26 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
+repo = 'neomake/neomake'
+on_path = '.*'
+hook_add = 'source ~/.vim/neomake.rc.vim'
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+
+[[plugins]]
+repo = 'gosukiwi/vim-atom-dark'
+
+[[plugins]]
+repo = 'cocopon/iceberg.vim'

@@ -1,0 +1,81 @@
+# Basic {{{1
+[[plugins]]
+if = '''has('nvim')'''
+repo = 'Shougo/deoplete.nvim'
+depends = 'context_filetype.vim'
+on_i = 1
+# 起動時にdeopleteを有効にする
+hook_source = 'let g:deoplete#enable_at_startup = 1'
+# deoplete.nvim用の設定をロード
+hook_post_source = 'source ~/.vim/deoplete.rc.vim'
+
+[[plugins]]
+if = '''has('vim')'''
+repo = 'Shougo/neocomplete'
+depends = 'context_filetype.vim'
+on_i = 1
+
+[[plugins]]
+repo = 'Shougo/neosnippet'
+depends = ['context_filetype.vim', 'neosnippet-snippets']
+on_i = 1
+on_ft = 'snippet'
+
+[[plugins]]
+repo = 'Shougo/neco-syntax'
+on_i = 1
+
+# 1}}}
+
+
+# HTML / CSS {{{1
+[[plugins]]
+repo = 'mattn/emmet-vim'
+on_ft = ['css', 'html', 'sass', 'scss', 'jsx']
+
+[[plugins]]
+repo = 'wavded/vim-stylus'
+on_ft = 'stylus'
+# 1}}}
+
+# Jade {{{1
+[[plugins]]
+repo = 'digitaltoad/vim-jade'
+on_ft = 'jade'
+# 1}}}
+
+# JavaScript {{{1
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+depends = 'tern_for_vim'
+on_ft = 'javascript'
+
+# es6のハイライト
+[[plugins]]
+repo = 'othree/yajs.vim'
+on_ft = 'javascript'
+depends = 'vim-javascript'
+
+# stage-0 のsyntax highlight
+[[plugins]]
+repo = 'othree/es.next.syntax.vim'
+on_ft = 'javascript'
+depends = 'yajs.vim'
+
+[[plugins]]
+repo = 'marijnh/tern_for_vim'
+on_ft = 'javascript'
+build = 'npm install'
+
+[[plugins]]
+repo = 'mxw/vim-jsx'
+on_ft = 'javascript'
+
+[[plugins]]
+repo  = 'heavenshell/vim-jsdoc'
+on_ft = 'javascript'
+
+[[plugins]]
+repo = 'flowtype/vim-flow'
+on_ft = 'javascript'
+# 1}}}

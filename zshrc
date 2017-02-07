@@ -1,5 +1,4 @@
 export ZSH=/Users/ideyuta/.oh-my-zsh
-
 ZSH_THEME="robbyrussell"
 
 plugins=(git)
@@ -37,11 +36,6 @@ export PATH=$GOPATH/bin:$PATH
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-#export PATH=$PATH:~/Library/Python/2.7/bin
-#powerline-daemon -q
-#. /usr/local/lib/python2.7/site-packages/poweline/bindings/zsh/powerline.zsh
-
-
 ### Git-Radar
 # export PROMPT="$PROMPT$(git-radar --zsh --fetch)"
 
@@ -52,3 +46,14 @@ eval "$(direnv hook zsh)"
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+
+# for vim
+alias vim=nvim
+export XDG_CONFIG_HOME=$HOME/.config
+
+export TERM=xterm-256color
+
+# python
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
