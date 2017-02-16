@@ -212,6 +212,14 @@ nmap <silent> <C-l> <Plug>(jsdoc)
 nnoremap <silent><C-l> :JsDoc<CR>
 " }}}"
 
+" previm
+let g:previm_open_cmd = 'open -a Google\ Chrome'
+augroup PrevimSettings
+  autocmd!
+  autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+augroup END
+" }}}"
+
 " vim-jsx {{{
 " .jsx拡張子以外のファイルでも有効にする
 let g:jsx_ext_required = 0

@@ -25,6 +25,10 @@ on_ft = 'snippet'
 repo = 'Shougo/neco-syntax'
 on_i = 1
 
+[[plugins]]
+repo = 'kannokanno/previm'
+on_i = 1
+
 # 1}}}
 
 
