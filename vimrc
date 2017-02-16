@@ -124,7 +124,7 @@ set showcmd
 set title
 " 縦にラインを引く
 set colorcolumn=80
-hi ColorColumn guibg=#666666
+hi ColorColumn guibg=#999999
 "" 対応する括弧を強調表示する
 set showmatch
 "" 対応する括弧の強調表示時間を設定する
@@ -137,7 +137,7 @@ set scrolloff=5
 set visualbell t_vb=
 set noerrorbells
 " カーソル行のハイライト
-set cursorline
+" set cursorline
 "}}}
 
 " バックアップ・スワップ・履歴に関する設定"{{{
