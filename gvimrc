@@ -1,4 +1,4 @@
-colorscheme hybrid
+colorscheme atom-dark-256
 set visualbell t_vb=
 
 if has('gui_macvim')
