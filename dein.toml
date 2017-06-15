@@ -11,7 +11,7 @@ repo = 'Shougo/context_filetype.vim'
 [[plugins]]
 repo = 'neomake/neomake'
 on_path = '.*'
-hook_add = 'source ~/.vim/neomake.rc.vim'
+hook_add = 'source ~/neomake.rc.vim'
 
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
