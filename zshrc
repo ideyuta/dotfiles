@@ -155,5 +155,9 @@ export TERM=xterm-256color
 
 # python
 export PYENV_ROOT="$HOME/.pyenv"
+export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# ruby
+eval "$(rbenv init -)"
