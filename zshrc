@@ -49,8 +49,7 @@ alias -g GI='| grep -ri'
 
 # エイリアス
 alias lst='ls -ltr --color=auto'
-alias l='ls -ltr --color=auto'
-alias la='ls -la --color=auto'
+alias l='ls -la'
 alias ll='ls -l --color=auto'
 alias so='source'
 alias v='vim'
@@ -71,9 +70,6 @@ alias diff='diff -U1'
 stty erase ^H
 stty erase "^?"
 bindkey "^[[3~" delete-char
-
-# ls -lGを実行
-alias l='ls -lG'
 
 # どこからでも参照できるディレクトリパス
 cdpath=(~)
