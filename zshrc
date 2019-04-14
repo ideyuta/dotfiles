@@ -160,4 +160,8 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 # ruby
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# Haskell
+export PATH="$HOME/Library/Haskell/bin:$PATH"

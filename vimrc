@@ -90,9 +90,9 @@ if !has('nvim')
   set t_Co=256
 endif
 " True color対応
-if has('patch-7.4.1778')
-  set guicolors
-endif
+" if has('patch-7.4.1778')
+"   set guicolors
+" endif
 " nvim >= 0.1.5
 if has('termguicolors')
   set termguicolors
@@ -208,8 +208,6 @@ let g:jsdoc_param_description_separator = '-'
 " ES6用の省略記法を許可
 let g:jsdoc_enable_es6 = 1
 nmap <silent> <C-l> <Plug>(jsdoc)
-" keymap
-nnoremap <silent><C-l> :JsDoc<CR>
 " }}}"
 
 " previm
@@ -241,7 +239,17 @@ autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 " }}}
 
+" flow {{{
+" let g:flow#autoclose = 1
+" let g:javascript_plugin_flow = 1
+" }}}
+
 " eslint {{{
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'eslint_d'
+" }}}
+
+" typescript {{{
+let g:typescript_indent_disable = 1
+let g:typescript_opfirst='\%([<>=,?^%|*/&]\|\([-:+]\)\1\@!\|!=\|in\%(stanceof\)\=\>\)'
 " }}}
