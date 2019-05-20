@@ -13,6 +13,7 @@ ln -si $BASE_DIR/tmux.conf $HOME/.tmux.conf
 
 # Vim
 ln -si $BASE_DIR/vimrc $HOME/.vimrc
+ln -si $BASE_DIR/vimrc $HOME/.config/nvim/init.vim
 ln -si $BASE_DIR/vim $HOME/.vim
 ln -si $BASE_DIR/gvimrc $HOME/.gvimrc
 ln -si $BASE_DIR/deoplete.rc.vim $HOME/deoplete.rc.vim
