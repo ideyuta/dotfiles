@@ -253,3 +253,14 @@ let g:syntastic_javascript_eslint_exec = 'eslint_d'
 let g:typescript_indent_disable = 1
 let g:typescript_opfirst='\%([<>=,?^%|*/&]\|\([-:+]\)\1\@!\|!=\|in\%(stanceof\)\=\>\)'
 " }}}
+
+" go {{{
+filetype off
+filetype plugin indent off
+set runtimepath+=/usr/local/go/misc/vim
+au FileType go setlocal sw=4 ts=4 sts=4 noet
+au FileType go setlocal makeprg=go\ build\ ./... errorformat=%f:%l:\ %m
+au BufWritePre *.go Fmt
+filetype plugin indent on
+syntax on
+" }}}

@@ -151,7 +151,7 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 alias vim=nvim
 export XDG_CONFIG_HOME=$HOME/.config
 
-export TERM=xterm-256color
+export TERM=screen-256color
 
 # python
 export PYENV_ROOT="$HOME/.pyenv"
@@ -165,3 +165,8 @@ eval "$(rbenv init -)"
 
 # Haskell
 export PATH="$HOME/Library/Haskell/bin:$PATH"
+
+# golang
+export GOPATH=$HOME/go
+export GOROOT=$( go env GOROOT )
+export PATH=$GOPATH/bin:$PATH
