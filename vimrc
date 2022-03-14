@@ -2,22 +2,27 @@ if !has('nvim')
   " neovimはデフォルトでutf-8になる
   set encoding=utf-8
 endif
-  scriptencoding utf8
+scriptencoding utf8
 
 " dein.vim {{{
 if &compatible
   set nocompatible
 endif
 
+" 以下の設定はコピペ
+" see: http://qiita.com/delphinus35/items/00ff2c0ba972c6e41542
+
 " dein.vimのディレクトリ
 let s:dein_dir = expand('~/.cache/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
 " dein.vimがなければgit cloneする
-if !isdirectory(s:dein_repo_dir)
-  execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
+if &runtimepath != '/dein.vim'
+  if !isdirectory(s:dein_repo_dir)
+    execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
+  endif
+  execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 endif
-execute 'set runtimepath^=' . s:dein_repo_dir
 
 " dein.vimの設定を開始
 if dein#load_state(s:dein_dir)
@@ -195,10 +200,10 @@ let g:indent_guides_color_change_percent=20
 let g:indent_guides_guide_size=1
 let g:indent_guides_space_guides=1
 
-hi IndentGuidesOdd  ctermbg=235
-hi IndentGuidesEven ctermbg=237
-au FileType coffee,ruby,javascript,python IndentGuidesEnable
-nmap <silent><Leader>ig <Plug>IndentGuidesToggle
+" hi IndentGuidesOdd  ctermbg=235
+" hi IndentGuidesEven ctermbg=237
+" au FileType coffee,ruby,javascript,python IndentGuidesEnable
+" nmap <silent><Leader>ig <Plug>IndentGuidesToggle
 " }}}
 
 " jsdoc-vim "{{{
@@ -252,6 +257,7 @@ let g:syntastic_javascript_eslint_exec = 'eslint_d'
 " typescript {{{
 let g:typescript_indent_disable = 1
 let g:typescript_opfirst='\%([<>=,?^%|*/&]\|\([-:+]\)\1\@!\|!=\|in\%(stanceof\)\=\>\)'
+autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
 " }}}
 
 " go {{{

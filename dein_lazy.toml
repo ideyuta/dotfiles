@@ -36,29 +36,22 @@ on_i = 1
 [[plugins]]
 repo = 'mattn/emmet-vim'
 on_ft = ['css', 'html', 'sass', 'scss', 'jsx']
-
-[[plugins]]
-repo = 'wavded/vim-stylus'
-on_ft = 'stylus'
-# 1}}}
-
-# Jade {{{1
-[[plugins]]
-repo = 'digitaltoad/vim-jade'
-on_ft = 'jade'
 # 1}}}
 
 # JavaScript {{{1
 [[plugins]]
 repo = 'pangloss/vim-javascript'
-depends = 'tern_for_vim'
 on_ft = 'javascript'
 
 # TypeScript {{{1
 [[plugins]]
 repo = 'leafgarland/typescript-vim'
-depends = 'tern_for_vim'
-on_ft = 'javascript'
+
+[[plugins]]
+repo = 'peitalin/vim-jsx-typescript'
+
+[[plugins]]
+repo = 'maxmellon/vim-jsx-pretty'
 
 # es6のハイライト
 [[plugins]]
@@ -66,29 +59,25 @@ repo = 'othree/yajs.vim'
 on_ft = 'javascript'
 depends = 'vim-javascript'
 
+[[plugins]]
+repo = 'othree/javascript-libraries-syntax.vim'
+on_ft = 'javascript'
+depends = 'yajs.vim'
+
 # stage-0 のsyntax highlight
 [[plugins]]
 repo = 'othree/es.next.syntax.vim'
 on_ft = 'javascript'
-depends = 'yajs.vim'
-
-[[plugins]]
-repo = 'marijnh/tern_for_vim'
-on_ft = 'javascript'
-build = 'npm install'
+depends = 'javascript-libraries-syntax.vim'
 
 [[plugins]]
 repo = 'mxw/vim-jsx'
 on_ft = 'javascript'
+depends = 'yajs.vim'
 
 [[plugins]]
 repo  = 'heavenshell/vim-jsdoc'
 on_ft = 'javascript'
-
-# [[plugins]]
-# repo = 'flowtype/vim-flow'
-# on_ft = 'javascript'
-# 1}}}
 
 
 repo = 'fatih/vim-go'

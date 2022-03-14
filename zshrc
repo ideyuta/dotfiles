@@ -167,6 +167,6 @@ eval "$(rbenv init -)"
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 
 # golang
-export GOPATH=$HOME/go
-export GOROOT=$( go env GOROOT )
-export PATH=$GOPATH/bin:$PATH
+# export GOPATH=$HOME/go
+# export GOROOT=$( go env GOROOT )
+# export PATH=$GOPATH/bin:$PATH
